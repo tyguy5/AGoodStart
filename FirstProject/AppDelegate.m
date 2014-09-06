@@ -27,8 +27,11 @@ CGFloat bodyMassIndex = (weight / (height * height)) * 703;
 
     //Log that to the console
 NSLog(@"%f",bodyMassIndex);
+    
+    NSInteger intBMI = (NSInteger)bodyMassIndex;
+    NSInteger roundBMI = roundf(bodyMassIndex);
 
-{
+    {
 // Override point for customization after application launch.
     return YES;
 }
