@@ -10,10 +10,28 @@
 
 @implementation AppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    //Decalare two variables
+CGFloat height;
+CGFloat weight;
+
+    //Store a value in each variable
+height = 71.0F;
+weight = 185.0F;
+
+
+    //Calculate the body mass index
+CGFloat bodyMassIndex = (weight / (height * height)) * 703;
+
+
+    //Log that to the console
+NSLog(@"%f",bodyMassIndex);
+
 {
-    // Override point for customization after application launch.
+// Override point for customization after application launch.
     return YES;
+}
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
